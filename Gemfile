@@ -22,6 +22,10 @@ group :development do
   gem 'therubyracer', platforms: :ruby
 end
 
+group :production do
+  gem 'rails_12factor'
+end
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
