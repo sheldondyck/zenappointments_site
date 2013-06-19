@@ -29,8 +29,9 @@ test:
 production:
   adapter: postgres
   encoding: unicode
-  database: zenappointments_prod
-  user: zenappointments
-  password: 'zenappointments'
+  host: ec2-107-20-224-218.compute-1.amazonaws.com
+  database: db9o0m64p2lcfj
+  user: cwbumertaqvlpt
+  password: 'wSEB_YRXHSwOjx5bLf4SBlvvh0'
   pool: 5
   timeout: 5000
