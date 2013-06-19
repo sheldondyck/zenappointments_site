@@ -26,6 +26,16 @@ test:
   pool: 5
   timeout: 5000
 
+production_asset_builder:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: zenappointments_dev
+  user: rails_dev
+  password: 'rails_dev'
+  pool: 5
+  timeout: 5000
+
 production:
   adapter: postgres
   encoding: unicode
@@ -35,3 +45,4 @@ production:
   password: 'wSEB_YRXHSwOjx5bLf4SBlvvh0'
   pool: 5
   timeout: 5000
+
