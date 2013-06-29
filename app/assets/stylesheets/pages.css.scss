@@ -2,16 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background-color: #eee;
+  background-color: #fff;
 }
 
 a {
   font-family: helvetica;
-  .link {
-    color: #ce4dd7;
-    &:hover { color: #ffb3ff; }
-    &:visited { color: #c456cb; }
-  }
+  color: #aaa;
+  &:hover { color: #222; }
+  &:visited { color: #aaa; }
 }
 
 h1 {
@@ -43,7 +41,7 @@ blockquote {
   color: #333;
   font-size: 8pt;
   position: fixed;
-  width: 400px;
+  width: 100px;
   right: 0px;
   bottom: 0px;
 }
