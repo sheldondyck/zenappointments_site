@@ -1,1 +1,17 @@
-%h1 foo site
+%nav.top-bar
+  %ul.title-area
+    %li.name
+      %h1
+        =link_to 'ZenAppointments', '#'
+  %section.top-bar-section
+    %ul.right
+      %li.active
+        =link_to 'Features', '#'
+      %li
+        =link_to 'Pricing', '#'
+      %li
+        =link_to 'Blog', '#'
+      %li
+        =link_to 'Sign Up', signup_path
+      %li
+        =link_to 'Sign In', signin_path
