@@ -6,12 +6,46 @@
   %section.top-bar-section
     %ul.right
       %li.active
-        =link_to 'Features', '#'
+        %a{href: '#features'} Features
       %li
-        =link_to 'Pricing', '#'
+        %a{href: '#pricing'} Pricing
       %li
         =link_to 'Blog', '#'
       %li
-        =link_to 'Sign Up', signup_path
+        =link_to 'Sign Up', signup_path, class: 'button'
       %li
-        =link_to 'Sign In', signin_path
+        -# TODO: change all 'Sign In' to 'Log In'
+        =link_to 'Log In', signin_path
+.row
+  %p
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacus justo, auctor vitae tristique nec, adipiscing sed metus. In a magna vulputate nisi tincidunt vestibulum sit amet quis lacus. Vestibulum vulputate metus in purus sagittis dapibus. In vel libero in metus venenatis tristique commodo a nunc. Duis eu lectus nisl. Phasellus commodo adipiscing sapien non pellentesque. Praesent ut tristique risus.
+  %p
+    Nam et consequat mi. Maecenas sodales egestas laoreet. Sed varius urna risus, ac facilisis nisi congue at. Sed hendrerit tincidunt risus, nec sodales est hendrerit id. Maecenas quis iaculis ligula, vulputate euismod tortor. Curabitur iaculis lectus a congue venenatis. Sed at aliquet augue, eu sagittis odio. Phasellus risus turpis, sagittis vitae quam vitae, viverra fringilla odio. Suspendisse potenti.
+  %p
+    Vivamus purus leo, hendrerit et rutrum eget, congue nec libero. Mauris sit amet erat lacus. Phasellus accumsan risus sed vehicula pulvinar. Aenean tempor nibh et magna fermentum, et tempor mi cursus. Curabitur consectetur magna vitae massa gravida, posuere vestibulum risus pharetra. Donec et est et enim pretium tincidunt in semper arcu. Praesent in lacus tincidunt, pharetra nisi non, suscipit tellus. Curabitur convallis arcu in nulla ullamcorper mattis. Sed tincidunt tempus velit quis dictum. Etiam rutrum tempor felis nec hendrerit.
+  %p
+    Integer diam magna, lobortis eget fermentum sit amet, iaculis eget sem. Pellentesque non lacinia est, et posuere sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id libero orci. Aliquam bibendum turpis id gravida vestibulum. Vestibulum pretium, magna eu tempor mollis, urna nisi vestibulum nisl, a vestibulum velit enim euismod lacus. In pulvinar porttitor ligula vel pretium.
+  %p
+    Curabitur pretium elit sit amet augue imperdiet mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed a tempor tortor. Morbi iaculis dapibus enim vel viverra. Maecenas eu hendrerit leo. Fusce mattis eleifend orci nec molestie. Aenean consequat eget nulla sed porttitor. Nam varius et velit non varius. Vivamus sollicitudin orci eu mi malesuada adipiscing. Ut lobortis suscipit lacinia.
+.row
+  %a{name: 'features'}
+  %h1 Features
+  %p
+    Integer diam magna, lobortis eget fermentum sit amet, iaculis eget sem. Pellentesque non lacinia est, et posuere sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id libero orci. Aliquam bibendum turpis id gravida vestibulum. Vestibulum pretium, magna eu tempor mollis, urna nisi vestibulum nisl, a vestibulum velit enim euismod lacus. In pulvinar porttitor ligula vel pretium.
+  %p
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacus justo, auctor vitae tristique nec, adipiscing sed metus. In a magna vulputate nisi tincidunt vestibulum sit amet quis lacus. Vestibulum vulputate metus in purus sagittis dapibus. In vel libero in metus venenatis tristique commodo a nunc. Duis eu lectus nisl. Phasellus commodo adipiscing sapien non pellentesque. Praesent ut tristique risus.
+  %p
+    Nam et consequat mi. Maecenas sodales egestas laoreet. Sed varius urna risus, ac facilisis nisi congue at. Sed hendrerit tincidunt risus, nec sodales est hendrerit id. Maecenas quis iaculis ligula, vulputate euismod tortor. Curabitur iaculis lectus a congue venenatis. Sed at aliquet augue, eu sagittis odio. Phasellus risus turpis, sagittis vitae quam vitae, viverra fringilla odio. Suspendisse potenti.
+  %p
+    Vivamus purus leo, hendrerit et rutrum eget, congue nec libero. Mauris sit amet erat lacus. Phasellus accumsan risus sed vehicula pulvinar. Aenean tempor nibh et magna fermentum, et tempor mi cursus. Curabitur consectetur magna vitae massa gravida, posuere vestibulum risus pharetra. Donec et est et enim pretium tincidunt in semper arcu. Praesent in lacus tincidunt, pharetra nisi non, suscipit tellus. Curabitur convallis arcu in nulla ullamcorper mattis. Sed tincidunt tempus velit quis dictum. Etiam rutrum tempor felis nec hendrerit.
+.row
+  %a{name: 'pricing'}
+  %h1 Pricing
+  %p
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacus justo, auctor vitae tristique nec, adipiscing sed metus. In a magna vulputate nisi tincidunt vestibulum sit amet quis lacus. Vestibulum vulputate metus in purus sagittis dapibus. In vel libero in metus venenatis tristique commodo a nunc. Duis eu lectus nisl. Phasellus commodo adipiscing sapien non pellentesque. Praesent ut tristique risus.
+  %p
+    Integer diam magna, lobortis eget fermentum sit amet, iaculis eget sem. Pellentesque non lacinia est, et posuere sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id libero orci. Aliquam bibendum turpis id gravida vestibulum. Vestibulum pretium, magna eu tempor mollis, urna nisi vestibulum nisl, a vestibulum velit enim euismod lacus. In pulvinar porttitor ligula vel pretium.
+  %p
+    Nam et consequat mi. Maecenas sodales egestas laoreet. Sed varius urna risus, ac facilisis nisi congue at. Sed hendrerit tincidunt risus, nec sodales est hendrerit id. Maecenas quis iaculis ligula, vulputate euismod tortor. Curabitur iaculis lectus a congue venenatis. Sed at aliquet augue, eu sagittis odio. Phasellus risus turpis, sagittis vitae quam vitae, viverra fringilla odio. Suspendisse potenti.
+  %p
+    Vivamus purus leo, hendrerit et rutrum eget, congue nec libero. Mauris sit amet erat lacus. Phasellus accumsan risus sed vehicula pulvinar. Aenean tempor nibh et magna fermentum, et tempor mi cursus. Curabitur consectetur magna vitae massa gravida, posuere vestibulum risus pharetra. Donec et est et enim pretium tincidunt in semper arcu. Praesent in lacus tincidunt, pharetra nisi non, suscipit tellus. Curabitur convallis arcu in nulla ullamcorper mattis. Sed tincidunt tempus velit quis dictum. Etiam rutrum tempor felis nec hendrerit.
