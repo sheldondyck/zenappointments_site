@@ -14,6 +14,7 @@ gem 'turbolinks'
 gem 'compass-rails'
 gem 'zurb-foundation'
 gem 'uglifier' #, '>= 1.3.0'
+gem 'font-awesome-rails'
 
 group :development do
   gem 'therubyracer', platforms: :ruby

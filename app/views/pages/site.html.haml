@@ -25,22 +25,36 @@
       .jumbotron.homepage
         =image_tag 'http://placehold.it/980x500', class: 'bg'
         .content
-          %h1 Nam et consequat mi.
+          %h1 Everything you need to schedule your clients
           =link_to 'Sign Up for Free!', signup_path, class: 'large radius nice blue button'
-.container
   .row
-    .small-2.large-4.columns
-      =image_tag 'http://placehold.it/400x300'
-      %h3
-        Vivamus purus leo
-    .small-2.large-4.columns
-      =image_tag 'http://placehold.it/400x300'
-      %h3
-        Integer diam magna
-    .small-2.large-4.columns
-      =image_tag 'http://placehold.it/400x300'
-      %h3
-        Curabitur pretium elit
+    .large-12.columns
+      %h2.centered Everything you need to schedule your clients
+      .acme-demo-container
+        -#.explanations
+          %ul
+            %li foo 1
+            %li foo 2
+            %li foo 3
+            %li foo 4
+  .row
+    %h2.centered Everything you need to schedule your clients
+    .small-2.large-3.columns
+      %i.icon-calendar.icon-big
+      %h4.centered
+        Schedule Clients
+    .small-2.large-3.columns
+      %i.icon-group.icon-big
+      %h4.centered
+        Manage your Client List
+    .small-2.large-3.columns
+      %i.icon-bell.icon-big
+      %h4.centered
+        Send Automatic Reminders to Your Clients
+    .small-2.large-3.columns
+      %i.icon-money.icon-big
+      %h4.centered
+        Tracking Your Billing
   .row
     %p
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacus justo, auctor vitae tristique nec, adipiscing sed metus. In a magna vulputate nisi tincidunt vestibulum sit amet quis lacus. Vestibulum vulputate metus in purus sagittis dapibus. In vel libero in metus venenatis tristique commodo a nunc. Duis eu lectus nisl. Phasellus commodo adipiscing sapien non pellentesque. Praesent ut tristique risus.

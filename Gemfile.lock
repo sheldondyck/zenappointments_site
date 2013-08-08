@@ -77,6 +77,8 @@ GEM
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
     ffi (1.9.0)
+    font-awesome-rails (3.2.1.2)
+      railties (>= 3.2, < 5.0)
     fssm (0.2.10)
     haml (4.0.3)
       tilt
@@ -97,7 +99,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    meta_request (0.2.7)
+    meta_request (0.2.8)
       callsite
       rack-contrib
       railties
@@ -202,6 +204,7 @@ DEPENDENCIES
   compass-rails
   debugger
   factory_girl_rails
+  font-awesome-rails
   haml
   jbuilder
   jquery-rails
