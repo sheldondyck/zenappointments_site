@@ -17,7 +17,38 @@
 .acme-demo-container {
   position:relative;
   height:528px;
-  background:image-url('acme-demo-mac.png') top left no-repeat;
+  padding:100px;
+  background:image-url('acme-demo-mac.png') bottom center no-repeat;
+}
+
+.chessboard {
+  position:relative;
+  padding:100px;
+  background:rgba(200,200,200,0.85);
+}
+
+.social {
+  position:relative;
+  padding:100px;
+  background:rgba(100,150,100,0.85);
+}
+
+.features {
+  position:relative;
+  padding:100px;
+  background:rgba(100,100,150,0.85);
+}
+
+.pricing {
+  position:relative;
+  padding:100px;
+  background:rgba(255,255,255,0.85);
+}
+
+.footer {
+  position:relative;
+  padding:100px;
+  background:rgba(0,100,150,0.85);
 }
 
 .jumbotron {
