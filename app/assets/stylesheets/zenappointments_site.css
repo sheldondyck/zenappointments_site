@@ -1,5 +1,7 @@
 /* zenappointments custom */
 
+$section_padding:25px;
+
 .acme-demo-container .explanations {
   position:relative;
 }
@@ -23,31 +25,31 @@
 
 .chessboard {
   position:relative;
-  padding:100px;
+  padding:$section_padding;
   background:rgba(200,200,200,0.85);
 }
 
 .social {
   position:relative;
-  padding:100px;
+  padding:$section_padding;
   background:rgba(100,150,100,0.85);
 }
 
 .features {
   position:relative;
-  padding:100px;
+  padding:$section_padding;
   background:rgba(100,100,150,0.85);
 }
 
 .pricing {
   position:relative;
-  padding:100px;
+  padding:$section_padding;
   background:rgba(255,255,255,0.85);
 }
 
 .footer {
   position:relative;
-  padding:100px;
+  padding:$section_padding;
   background:rgba(0,100,150,0.85);
 }
 
