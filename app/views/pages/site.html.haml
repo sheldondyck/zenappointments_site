@@ -86,19 +86,28 @@
   .features#features
     .row
       %a{name: 'features'}
-      %h1 Features
-      %p
-        Integer diam magna, lobortis eget fermentum sit amet, iaculis eget sem. Pellentesque non lacinia est, et posuere sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id libero orci. Aliquam bibendum turpis id gravida vestibulum. Vestibulum pretium, magna eu tempor mollis, urna nisi vestibulum nisl, a vestibulum velit enim euismod lacus. In pulvinar porttitor ligula vel pretium.
-      %p
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacus justo, auctor vitae tristique nec, adipiscing sed metus. In a magna vulputate nisi tincidunt vestibulum sit amet quis lacus. Vestibulum vulputate metus in purus sagittis dapibus. In vel libero in metus venenatis tristique commodo a nunc. Duis eu lectus nisl. Phasellus commodo adipiscing sapien non pellentesque. Praesent ut tristique risus.
-      %p
-        Nam et consequat mi. Maecenas sodales egestas laoreet. Sed varius urna risus, ac facilisis nisi congue at. Sed hendrerit tincidunt risus, nec sodales est hendrerit id. Maecenas quis iaculis ligula, vulputate euismod tortor. Curabitur iaculis lectus a congue venenatis. Sed at aliquet augue, eu sagittis odio. Phasellus risus turpis, sagittis vitae quam vitae, viverra fringilla odio. Suspendisse potenti.
-      %p
-        Vivamus purus leo, hendrerit et rutrum eget, congue nec libero. Mauris sit amet erat lacus. Phasellus accumsan risus sed vehicula pulvinar. Aenean tempor nibh et magna fermentum, et tempor mi cursus. Curabitur consectetur magna vitae massa gravida, posuere vestibulum risus pharetra. Donec et est et enim pretium tincidunt in semper arcu. Praesent in lacus tincidunt, pharetra nisi non, suscipit tellus. Curabitur convallis arcu in nulla ullamcorper mattis. Sed tincidunt tempus velit quis dictum. Etiam rutrum tempor felis nec hendrerit.
+      %h2 Features
+      .large-6.columns
+        =image_tag 'http://placehold.it/400x300'
+        %h4
+          Integer diam magna, lobortis eget fermentum sit amet
+      .large-6.columns
+        =image_tag 'http://placehold.it/400x300'
+        %h4
+          Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
+    .row
+      .large-6.columns
+        =image_tag 'http://placehold.it/400x300'
+        %h4
+          Integer diam magna, lobortis eget fermentum sit amet
+      .large-6.columns
+        =image_tag 'http://placehold.it/400x300'
+        %h4
+          Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
   .pricing#pricing
     .row
       %a{name: 'pricing'}
-      %h1 Pricing
+      %h2 Pricing
     .row
       %ul.large-block-grid-5
         %li
@@ -182,4 +191,26 @@
         .small-2.large-4.columns
           %h5 ZenAppointments
           %p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        .small-2.large-4.columns
+          %h5 Contact Us
+          %p
+            %span.icon-stack
+              %i.icon-circle.icon-stack-base
+              %i.icon-twitter.icon-light
+            twitter
+          %p
+            %span.icon-stack
+              %i.icon-circle.icon-stack-base
+              %i.icon-facebook.icon-light
+            facebook
+          %p
+            %span.icon-stack
+              %i.icon-circle.icon-stack-base
+              %i.icon-google-plus.icon-light
+            g+
+          %p
+            %span.icon-stack
+              %i.icon-circle.icon-stack-base
+              %i.icon-envelope-alt.icon-light
+            email
 

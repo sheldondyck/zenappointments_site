@@ -16,6 +16,17 @@ $section_padding:25px;
   margin-right:auto;
 }
 
+.jumbotron {
+  position:relative;
+  margin-bottom:30px;
+}
+
+.jumbotron h1 {
+  position:absolute;
+  left:20px;
+  bottom:20px;
+}
+
 .acme-demo-container {
   position:relative;
   height:528px;
@@ -51,17 +62,6 @@ $section_padding:25px;
   position:relative;
   padding:$section_padding;
   background:rgba(0,100,150,0.85);
-}
-
-.jumbotron {
-  position:relative;
-  margin-bottom:30px;
-}
-
-.jumbotron h1 {
-  position:absolute;
-  left:20px;
-  bottom:20px;
 }
 
 .homepage {
