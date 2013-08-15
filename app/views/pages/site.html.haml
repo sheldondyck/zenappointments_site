@@ -75,14 +75,6 @@
         %i.icon-bar-chart.icon-big
         %h3.centered
           Measure how your business is doing
-  .social
-    .row
-      %p
-        Vivamus purus leo, hendrerit et rutrum eget, congue nec libero. Mauris sit amet erat lacus. Phasellus accumsan risus sed vehicula pulvinar. Aenean tempor nibh et magna fermentum, et tempor mi cursus. Curabitur consectetur magna vitae massa gravida, posuere vestibulum risus pharetra. Donec et est et enim pretium tincidunt in semper arcu. Praesent in lacus tincidunt, pharetra nisi non, suscipit tellus. Curabitur convallis arcu in nulla ullamcorper mattis. Sed tincidunt tempus velit quis dictum. Etiam rutrum tempor felis nec hendrerit.
-      %p
-        Integer diam magna, lobortis eget fermentum sit amet, iaculis eget sem. Pellentesque non lacinia est, et posuere sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id libero orci. Aliquam bibendum turpis id gravida vestibulum. Vestibulum pretium, magna eu tempor mollis, urna nisi vestibulum nisl, a vestibulum velit enim euismod lacus. In pulvinar porttitor ligula vel pretium.
-      %p
-        Curabitur pretium elit sit amet augue imperdiet mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed a tempor tortor. Morbi iaculis dapibus enim vel viverra. Maecenas eu hendrerit leo. Fusce mattis eleifend orci nec molestie. Aenean consequat eget nulla sed porttitor. Nam varius et velit non varius. Vivamus sollicitudin orci eu mi malesuada adipiscing. Ut lobortis suscipit lacinia.
   .features#features
     .row
       %a{name: 'features'}
@@ -104,16 +96,84 @@
         =image_tag 'http://placehold.it/400x300'
         %h4
           Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
+  .social
+    .row
+      .large-8.columns
+        %h2 What People are saying about us
+        .row
+          .large-4.columns
+            =image_tag 'http://placehold.it/200x200'
+          .large-8.columns
+            %p
+              Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
+              Integer diam magna, lobortis eget fermentum sit amet
+
+            %strong
+              Lucteticus Sindimus
+        %br
+        .row
+          .large-4.columns
+            =image_tag 'http://placehold.it/200x200'
+          .large-8.columns
+            %p
+              Integer diam magna, lobortis eget fermentum sit amet
+              Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
+            %strong
+              Founder's Mom
+      .large-4.columns
+        %h2 Twitter
+        .row
+          .large-4.columns
+            =image_tag 'http://placehold.it/75x75'
+          .large-8.columns
+            Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
+            %strong
+              Founder's Mom
+        %br
+        .row
+          .large-4.columns
+            =image_tag 'http://placehold.it/75x75'
+          .large-8.columns
+            Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
+            %strong
+              Founder's Mom
+        %br
+        .row
+          .large-4.columns
+            =image_tag 'http://placehold.it/75x75'
+          .large-8.columns
+            Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
+            %strong
+              Founder's Mom
+        %br
+        .row
+          .large-4.columns
+            =image_tag 'http://placehold.it/75x75'
+          .large-8.columns
+            Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
+            %strong
+              Founder's Mom
   .pricing#pricing
     .row
       %a{name: 'pricing'}
       %h2 Pricing
     .row
+      -# TODO: add anual price (per month) as well. look at close.io has a good example how
+      -# TODO: show as matrix
+      .button-bar
+        %ul.button-group.round
+          %li
+            %a.button
+              Monthly
+          %li
+            %a.button
+              Yearly
+    .row
       %ul.large-block-grid-5
         %li
           %ul.pricing-table
             %li.title Basic
-            %li.price $ 9.95/month
+            %li.price $&nbsp;9.95/month
             %li.description Single User
             %li.bullet-item Unlimited Clients
             %li.bullet-item Unlimited Appointments
@@ -123,12 +183,12 @@
             %li.bullet-item No Auto Reminders by Email
             %li.bullet-item No Auto Reminders by SMS
             %li.bullet-item Web Only
-            %li.bullet-item
+            %li.cta-button
               =link_to 'Sign Up Now!', signup_path, class: 'radius nice blue button'
         %li
           %ul.pricing-table
             %li.title Solo
-            %li.price $ 29.95/month
+            %li.price $&nbsp;29.95/month
             %li.description Single User
             %li.bullet-item Unlimited Clients
             %li.bullet-item Unlimited Appointments
@@ -138,12 +198,12 @@
             %li.bullet-item Auto Reminders by Email
             %li.bullet-item No Auto Reminders by SMS
             %li.bullet-item Web/Mobile
-            %li.bullet-item
+            %li.cta-button
               =link_to 'Sign Up Now!', signup_path, class: 'radius nice blue button'
         %li
           %ul.pricing-table
             %li.title Small Office
-            %li.price $ 79.95/month
+            %li.price $&nbsp;79.95/month
             %li.description Multi User
             %li.bullet-item Unlimited Clients
             %li.bullet-item Unlimited Appointments
@@ -153,7 +213,7 @@
             %li.bullet-item Auto Reminders by Email
             %li.bullet-item Auto Reminders by SMS
             %li.bullet-item Web/Mobile
-            %li.bullet-item
+            %li.cta-button
               =link_to 'Sign Up Now!', signup_path, class: 'radius nice blue button'
         %li
           %ul.pricing-table
@@ -168,7 +228,7 @@
             %li.bullet-item Auto Reminders by Email
             %li.bullet-item Auto Reminders by SMS
             %li.bullet-item Web/Mobile
-            %li.bullet-item
+            %li.cta-button
               =link_to 'Sign Up Now!', signup_path, class: 'radius nice blue button'
         %li
           %ul.pricing-table
@@ -183,7 +243,7 @@
             %li.bullet-item Auto Reminders by Email
             %li.bullet-item Auto Reminders by SMS
             %li.bullet-item Web/Mobile
-            %li.bullet-item
+            %li.cta-button
               =link_to 'Sign Up Now!', signup_path, class: 'radius nice blue button'
   .footer
     .container
