@@ -4,4 +4,10 @@ class PagesController < ApplicationController
 
   def site
   end
+
+  def company
+  end
+
+  def press
+  end
 end
