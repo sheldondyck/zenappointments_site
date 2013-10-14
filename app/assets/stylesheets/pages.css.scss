@@ -48,3 +48,15 @@ p {
   right: 0px;
   bottom: 0px;
 }
+
+li.price.monthly {
+  display: none;
+}
+
+li.price.yearly {
+  display: block;
+}
+
+.yearly-details {
+  font-size: 10pt;
+}
