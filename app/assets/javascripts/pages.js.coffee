@@ -1,4 +1,4 @@
-$(document).ready ->
+jQuery ->
   $(".scroll").click (event) ->
     event.preventDefault()
     dest = 0
@@ -8,12 +8,12 @@ $(document).ready ->
       dest = $(@hash).offset().top
     $("html,body").animate scrollTop: dest , 1000, "swing"
 
-$(document).ready ->
+jQuery ->
   $('a.btn-price-monthly').click ->
     $('li.price.monthly').css('display', 'block')
     $('li.price.yearly').css('display', 'none')
 
-$(document).ready ->
+jQuery ->
   $('.btn-price-yearly').click ->
     $('li.price.monthly').css('display', 'none')
     $('li.price.yearly').css('display', 'block')
