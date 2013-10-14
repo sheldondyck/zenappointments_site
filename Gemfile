@@ -15,17 +15,11 @@ gem 'compass-rails'
 gem 'zurb-foundation'
 gem 'uglifier' #, '>= 1.3.0'
 gem 'font-awesome-rails'
+gem 'awesome_print'
 
 group :development do
   gem 'therubyracer', platforms: :ruby
   gem 'rspec-rails'
-  #gem 'guard'
-  #gem 'guard-bundler'
-  #gem 'guard-rspec'
-  #gem 'guard-zeus'
-  gem 'libnotify'
-  gem 'capybara'
-  gem 'launchy'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
@@ -34,26 +28,34 @@ group :development do
   #gem 'ruby-debug'
   gem 'debugger'
   # gem 'ruby-debug19', :require => 'ruby-debug'
+
+  group :linux_development do
+    gem 'rb-inotify'
+  end
+
+  group :mac_development do
+    gem 'rb-fsevent'
+  end
 end
 
 group :test do
   gem 'turn', '>= 0.8.3', :require => false
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'guard'
+  gem 'guard-bundler'
+  gem 'guard-rspec'
+  gem 'guard-zeus'
+  gem 'libnotify'
   gem 'capybara'
+  gem 'launchy'
+  gem 'poltergeist'
+  gem 'awesome_print'
   gem 'debugger'
 end
 
 group :production do
   gem 'rails_12factor'
-end
-
-group :linux_development do
-  gem 'rb-inotify'
-end
-
-group :mac_development do
-  gem 'rb-fsevent'
 end
 
 group :doc do
