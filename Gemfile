@@ -11,7 +11,7 @@ gem 'coffee-rails' #, '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jbuilder' #, '~> 1.2'
 gem 'turbolinks'
-gem 'compass-rails'
+gem 'compass-rails', '~> 2.0.alpha.0'
 gem 'zurb-foundation'
 gem 'uglifier' #, '>= 1.3.0'
 gem 'font-awesome-rails'
@@ -29,13 +29,13 @@ group :development do
   gem 'debugger'
   # gem 'ruby-debug19', :require => 'ruby-debug'
 
-  group :linux_development do
-    gem 'rb-inotify'
-  end
+  #group :linux_development do
+  #  gem 'rb-inotify'
+  #end
 
-  group :mac_development do
-    gem 'rb-fsevent'
-  end
+  #group :mac_development do
+  #  gem 'rb-fsevent'
+  #end
 end
 
 group :test do
