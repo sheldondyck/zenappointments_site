@@ -4,6 +4,9 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 
+# required for rbx
+#gem "rubysl", "~> 2.0"
+
 gem 'pg'
 gem 'haml'
 gem 'sass-rails' #, '~> 4.0.0'
@@ -17,6 +20,14 @@ gem 'uglifier' #, '>= 1.3.0'
 gem 'font-awesome-rails'
 gem 'awesome_print'
 
+# TODO had to downgrade multi_json and sass because rails refused to init.
+# Remove these two lines and try again later
+#gem 'multi_json', '1.8.0'
+gem 'sass', '3.2.11'
+# TODO had to downgard listen because guard stopped working
+# Remove this line and try again later
+#gem 'listen', '~> 0.4.3'
+#
 group :development do
   gem 'therubyracer', platforms: :ruby
   gem 'rspec-rails'
@@ -26,7 +37,7 @@ group :development do
   gem 'annotate' #, :git => 'git://github.com/ctran/annotate_models.git'
   # To use debugger
   #gem 'ruby-debug'
-  gem 'debugger'
+  #gem 'debugger'
   # gem 'ruby-debug19', :require => 'ruby-debug'
 
   #group :linux_development do
@@ -51,7 +62,7 @@ group :test do
   gem 'launchy'
   gem 'poltergeist'
   gem 'awesome_print'
-  gem 'debugger'
+  #gem 'debugger'
 end
 
 group :production do
