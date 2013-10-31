@@ -5,6 +5,9 @@ class PagesController < ApplicationController
   def site
   end
 
+  def help
+  end
+
   def company
   end
 
