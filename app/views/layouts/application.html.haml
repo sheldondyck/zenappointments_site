@@ -9,3 +9,4 @@
     =csrf_meta_tags
   %body
     =yield
+    =render('layouts/google_analytics') unless Rails.env.development?
