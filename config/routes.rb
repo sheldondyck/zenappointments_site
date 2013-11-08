@@ -7,6 +7,7 @@ ZenAppointmentsSite::Application.routes.draw do
     match '/signup', to: redirect('https://app.zenappointments.com/signup'), as: 'signup', via: :get
   end
 
+  post "/subscribe_to_beta_list", to: 'pages#subscribe_to_beta_list'
   get '/site', to: 'pages#site'
   root 'pages#index'
 end

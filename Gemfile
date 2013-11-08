@@ -7,19 +7,6 @@ gem 'rails', '4.0.1'
 # required for rbx
 #gem "rubysl", "~> 2.0"
 
-gem 'pg'
-gem 'haml'
-gem 'sass-rails' #, '~> 4.0.0'
-gem 'coffee-rails' #, '~> 4.0.0'
-gem 'jquery-rails'
-gem 'jbuilder' #, '~> 1.2'
-gem 'turbolinks'
-gem 'compass-rails', branch: 'rails4'
-gem 'zurb-foundation'
-gem 'uglifier' #, '>= 1.3.0'
-gem 'font-awesome-rails'
-gem 'awesome_print'
-
 # TODO had to downgrade multi_json and sass because rails refused to init.
 # Remove these two lines and try again later
 #gem 'multi_json', '1.8.0'
@@ -28,6 +15,18 @@ gem 'sass', '3.2.11'
 # Remove this line and try again later
 #gem 'listen', '~> 0.4.3'
 #
+gem 'pg'
+gem 'haml'
+gem 'sass-rails' #, '~> 4.0.0'
+gem 'coffee-rails' #, '~> 4.0.0'
+gem 'jquery-rails'
+gem 'jbuilder' #, '~> 1.2'
+gem 'turbolinks'
+gem 'bootstrap-sass', :git => 'git://github.com/thomas-mcdonald/bootstrap-sass.git', :branch => '3'
+gem 'uglifier' #, '>= 1.3.0'
+gem 'font-awesome-rails'
+gem 'awesome_print'
+
 group :development do
   gem 'therubyracer', platforms: :ruby
   gem 'rspec-rails'

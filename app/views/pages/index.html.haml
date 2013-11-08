@@ -1,11 +1,15 @@
-%h1
-  =image_tag 'logo.png', alt: app_name
+=render('layouts/signinup_menu')
+.container
+  -#%h1
+    =image_tag 'logo.png', alt: app_name
 
-%p
-  =app_name
-  elegant software to manage your office
+  %h1.centered ZenAppointments is lauching soon!
 
-#site
-  =link_to 'site', site_path, {class: 'link'}
-#signin
-  =link_to 'sign in', signin_path, {class: 'link'}
+  .well
+    =render('subscribe_to_beta_list_form')
+
+  %p
+    #footer-links
+      =link_to 'site', site_path, {class: 'link'}
+      |
+      =link_to 'sign in', signin_path, {class: 'link'}

@@ -2,6 +2,15 @@
 
 $section_padding:25px;
 
+.navbar {
+  border-radius: 0px;
+}
+
+#zen-logo {
+  position:relative;
+  top:-2px;
+}
+
 .acme-demo-container .explanations {
   position:relative;
 }

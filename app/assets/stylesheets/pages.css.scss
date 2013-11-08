@@ -39,21 +39,11 @@ p {
   font-size: 16pt;
 }
 
-#site {
+#footer-links {
   font-family: helvetica;
   color: #333;
   font-size: 8pt;
-  position: fixed;
-  width: 100px;
-  left: 0px;
-  bottom: 10px;
-}
-
-#signin {
-  font-family: helvetica;
-  color: #333;
-  font-size: 8pt;
-  position: fixed;
+  position: absolute;
   width: 100px;
   right: 0px;
   bottom: 10px;

@@ -11,6 +11,93 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20131108115530) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+  enable_extension "hstore"
+
+  create_table "accounts", force: true do |t|
+    t.string   "company_name",  null: false
+    t.hstore   "configuration"
+    t.boolean  "active",        null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "accounts", ["company_name"], name: "index_accounts_on_company_name", unique: true, using: :btree
+
+  create_table "appointments", force: true do |t|
+    t.integer  "account_id",  null: false
+    t.integer  "user_id",     null: false
+    t.integer  "employee_id"
+    t.integer  "client_id",   null: false
+    t.datetime "time",        null: false
+    t.integer  "duration",    null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "appointments", ["account_id", "employee_id", "time"], name: "index_appointments_on_account_id_and_employee_id_and_time", using: :btree
+  add_index "appointments", ["account_id", "time"], name: "index_appointments_on_account_id_and_time", using: :btree
+  add_index "appointments", ["account_id"], name: "index_appointments_on_account_id", using: :btree
+  add_index "appointments", ["client_id"], name: "index_appointments_on_client_id", using: :btree
+  add_index "appointments", ["employee_id"], name: "index_appointments_on_employee_id", using: :btree
+  add_index "appointments", ["user_id"], name: "index_appointments_on_user_id", using: :btree
+
+  create_table "clients", force: true do |t|
+    t.integer  "account_id",         null: false
+    t.string   "first_name",         null: false
+    t.string   "last_name"
+    t.date     "birthday"
+    t.string   "email"
+    t.string   "telephone_cellular"
+    t.string   "telephone_home"
+    t.string   "telephone_office"
+    t.hstore   "custom_fields"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "clients", ["account_id"], name: "index_clients_on_account_id", using: :btree
+  add_index "clients", ["email"], name: "index_clients_on_email", using: :btree
+  add_index "clients", ["first_name", "last_name"], name: "index_clients_on_first_name_and_last_name", using: :btree
+  add_index "clients", ["first_name"], name: "index_clients_on_first_name", using: :btree
+  add_index "clients", ["last_name"], name: "index_clients_on_last_name", using: :btree
+
+  create_table "employees", force: true do |t|
+    t.integer  "account_id", null: false
+    t.string   "first_name", null: false
+    t.string   "last_name",  null: false
+    t.boolean  "active",     null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "employees", ["account_id"], name: "index_employees_on_account_id", using: :btree
+
+  create_table "users", force: true do |t|
+    t.integer  "account_id",            null: false
+    t.string   "first_name",            null: false
+    t.string   "last_name",             null: false
+    t.string   "email",                 null: false
+    t.string   "password_digest",       null: false
+    t.string   "signin_token",          null: false
+    t.boolean  "account_administrator", null: false
+    t.boolean  "active",                null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "users", ["account_id"], name: "index_users_on_account_id", using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["signin_token"], name: "index_users_on_signin_token", using: :btree
+
+  create_table "zen_mailing_lists", force: true do |t|
+    t.string   "email"
+    t.boolean  "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

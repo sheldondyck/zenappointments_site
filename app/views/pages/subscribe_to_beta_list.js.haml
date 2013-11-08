@@ -1,0 +1,4 @@
+-if @mailing_list.valid?
+  $('.zen-signup-beta-list').replaceWith('<h3>Thank you for subscribing!</h3>');
+-else
+  $('.zen-signup-beta-list').replaceWith("#{j render('subscribe_to_beta_list_form')}");

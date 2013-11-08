@@ -1,0 +1,13 @@
+.zen-signup-beta-list
+  %h4.centered Subscribe to receive updates
+  =form_tag subscribe_to_beta_list_path, method: :post, data: {remote: true} do |f|
+    .row
+      .col-sm-6.col-sm-offset-2
+        .form-group#email{class: error_class(@mailing_list, :email)}
+          %input.form-control#email{placeholder: 'Your Email Address', name: 'mailing_list[email]', type: 'text'}
+          -unless error_message(@mailing_list, :email).nil?
+            %p.help-block#email
+              %i.fa.fa-exclamation-triangle
+              =error_message(@mailing_list, :email)
+      .col-sm-2
+        =submit_tag 'Subscribe', class: 'btn btn-primary', 'data-disable-with' => 'Subscribing ...'
