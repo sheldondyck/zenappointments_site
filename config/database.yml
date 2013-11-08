@@ -36,7 +36,7 @@ production:
   host: ec2-107-20-224-218.compute-1.amazonaws.com
   database: db9o0m64p2lcfj
   user: cwbumertaqvlpt
-  password: 'wSEB_YRXHSwOjx5bLf4SBlvvh0'
+  password: Figaro.env.database_password
   pool: 5
   timeout: 5000
 

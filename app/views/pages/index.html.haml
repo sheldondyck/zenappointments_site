@@ -3,7 +3,17 @@
   -#%h1
     =image_tag 'logo.png', alt: app_name
 
-  %h1.centered ZenAppointments is lauching soon!
+  .zen-hero-section
+
+    -#%h1.centered
+      =image_tag 'logo.png', alt: app_name
+      %br
+      is lauching soon!
+    %h1.centered
+      =app_name
+      is lauching soon!
+    %br
+    %h3.centered Elegante appointment software for your office
 
   .well
     =render('subscribe_to_beta_list_form')
