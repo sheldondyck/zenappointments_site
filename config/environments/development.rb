@@ -18,6 +18,26 @@ ZenAppointmentsSite::Application.configure do
   # Change mail delvery to either :smtp, :sendmail, :file, :test
   config.action_mailer.delivery_method = :smtp
 
+  # email config
+#  config.action_mailer.smtp_settings = {
+#    address: 'smtp.gmail.com',
+#    port: 587,
+#    domain: 'zenappointments.com',
+#    authentication: :plain,
+#    enable_starttls_auto: true,
+#    user_name: 'zenappointments@gmail.com',
+#    password: Figaro.env.gmail_zenappointments_password
+#  }
+  config.action_mailer.smtp_settings = {
+    address: 'oxmail.registrar-servers.com',
+    port: 26,
+    domain: 'zenappointments.com',
+    authentication: :plain,
+    enable_starttls_auto: true,
+    user_name: 'zenappointments@zenappointments.com',
+    password: Figaro.env.namecheap_zenappointments_password
+  }
+
   # Specify what domain to use for mailer URLs
   config.action_mailer.default_url_options = {host: "localhost:3000"}
 

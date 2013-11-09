@@ -65,6 +65,20 @@ ZenAppointmentsSite::Application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
+  # email config
+  config.action_mailer.smtp_settings = {
+    address: 'oxmail.registrar-servers.com',
+    port: 26,
+    domain: 'zenappointments.com',
+    authentication: :plain,
+    enable_starttls_auto: true,
+    user_name: 'zenappointments@zenappointments.com',
+    password: Figaro.env.namecheap_zenappointments_password
+  }
+
+  # Specify what domain to use for mailer URLs
+  config.action_mailer.default_url_options = {host: "www.zenappointments.com"}
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
   config.i18n.fallbacks = true

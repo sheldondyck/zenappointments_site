@@ -9,6 +9,6 @@ class ZenMailer < ActionMailer::Base
   def subscribe_to_beta_list(email)
     @greeting = "Hi"
 
-    mail to: "zenappointments@zenappointments.com", from: "zenappointments@gmail.com"
+    mail to: "zenappointments@gmail.com", from: "zenappointments@zenappointments.com"
   end
 end
