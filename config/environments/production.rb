@@ -73,7 +73,7 @@ ZenAppointmentsSite::Application.configure do
     authentication: :plain,
     enable_starttls_auto: true,
     user_name: 'zenappointments@zenappointments.com',
-    password: Figaro.env.namecheap_zenappointments_password
+    password: ENV['NAMECHEAP_ZENAPPOINTMENTS_PASSWORD']
   }
 
   # Specify what domain to use for mailer URLs
