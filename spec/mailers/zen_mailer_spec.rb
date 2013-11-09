@@ -1,8 +1,8 @@
 require "spec_helper"
 
-describe ZenMailingList do
+describe ZenMailer do
   describe "subscribe_to_beta_list" do
-    let(:mail) { ZenMailingList.subscribe_to_beta_list }
+    let(:mail) { ZenMailer.subscribe_to_beta_list }
 
     it "renders the headers" do
       mail.subject.should eq("Subscribe to beta list")
