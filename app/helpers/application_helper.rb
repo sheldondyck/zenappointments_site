@@ -19,6 +19,12 @@ module ApplicationHelper
     end
   end
 
+  def active(cntrl_name)
+    if cntrl_name == controller.controller_name + '#' + controller.action_name then
+      return 'active'
+    end
+  end
+
   def error_class(h, sym)
     unless h.nil?
       if h.errors.messages.has_key?(sym)
