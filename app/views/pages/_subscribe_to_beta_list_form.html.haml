@@ -2,6 +2,7 @@
   %h4.centered
     =t '.subscribe_msg'
   =form_tag subscribe_to_beta_list_path, method: :post, data: {remote: true} do |f|
+    %input{type: :hidden, name: :locale, value: I18n.locale}
     .row
       .col-sm-6.col-sm-offset-2
         .form-group#email{class: error_class(@mailing_list, :email)}
