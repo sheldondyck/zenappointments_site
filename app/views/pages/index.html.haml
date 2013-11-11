@@ -11,18 +11,19 @@
       is lauching soon!
     %h1.centered
       =app_name
-      is lauching soon!
+      =t '.main_title'
     %br
-    %h3.centered Elegante appointment software for your office
+    %h3.centered
+      =t '.main_subtitle'
 
   .well
     =render('subscribe_to_beta_list_form')
 
   %p
     #lang-links
-      =link_to 'en', '#', {class: 'link'}
+      =link_to_unless_current 'en', locale: 'en'#, {class: 'link'}
       |
-      =link_to 'pt', '#', {class: 'link'}
+      =link_to_unless_current 'pt', locale: 'pt'#, {class: 'link'}
     #footer-links
       =link_to 'site', site_path, {class: 'link'}
       |

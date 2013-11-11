@@ -19,9 +19,9 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+pt:
   pages:
     index:
-      main_title: 'is launching soon!'
-      main_subtitle: 'Elegante appointment software for your office'
+      main_title: 'está lançando em breve!'
+      main_subtitle: 'Software de consulta para o seu escritório'
 
