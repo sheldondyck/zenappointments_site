@@ -28,4 +28,6 @@ en:
       your_email: 'Your Email Address'
       subscribe_msg: 'Subscribe to receive updates'
       subscribe_btn: 'Subscribe'
-
+      subscribing_btn: 'Subscribing'
+    subscribe_to_beta_list:
+      thank_you_scribing: 'Thank you for subscribing!'

@@ -11,4 +11,4 @@
               %i.fa.fa-exclamation-triangle
               =error_message(@mailing_list, :email)
       .col-sm-2
-        =submit_tag t('.subscribe_btn'), class: 'btn btn-primary', 'data-disable-with' => 'Subscribing ...'
+        =submit_tag(t('.subscribe_btn'), class: 'btn btn-primary', 'data-disable-with' => t('.subscribing_btn') + ' ...')

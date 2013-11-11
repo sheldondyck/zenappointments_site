@@ -7,6 +7,9 @@ pt-BR:
       your_email: 'Seu e-mail'
       subscribe_msg: 'Se inscrever para receber atualizações'
       subscribe_btn: 'Inscrever'
+      subscribing_btn: 'Inscrevendo'
+    subscribe_to_beta_list:
+      thank_you_scribing: 'Obrigado pela sua subscrição!'
 
   # copied from git@github.com:svenfuchs/rails-i18n.git/rails/local/pt-BR.yml
   date:
