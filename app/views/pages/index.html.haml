@@ -1,10 +1,6 @@
 =render('layouts/signinup_menu')
 .container
-  -#%h1
-    =image_tag 'logo.png', alt: app_name
-
   .zen-hero-section
-
     -#%h1.centered
       =image_tag 'logo.png', alt: app_name
       %br
@@ -23,7 +19,7 @@
     #lang-links
       =link_to_unless_current 'en', locale: 'en'#, {class: 'link'}
       |
-      =link_to_unless_current 'pt', locale: 'pt'#, {class: 'link'}
+      =link_to_unless_current 'pt-br', locale: 'pt-BR'#, {class: 'link'}
     #footer-links
       =link_to 'site', site_path, {class: 'link'}
       |

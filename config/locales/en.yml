@@ -24,4 +24,8 @@ en:
     index:
       main_title: 'is launching soon!'
       main_subtitle: 'Elegante appointment software for your office'
+    subscribe_to_beta_list_form:
+      your_email: 'Your Email Address'
+      subscribe_msg: 'Subscribe to receive updates'
+      subscribe_btn: 'Subscribe'
 
