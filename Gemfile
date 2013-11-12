@@ -17,6 +17,7 @@ gem 'sass', '3.2.11'
 #
 gem 'pg'
 gem 'haml'
+gem 'rdiscount' # used for :markdown in haml
 gem 'sass-rails' #, '~> 4.0.0'
 gem 'coffee-rails' #, '~> 4.0.0'
 gem 'jquery-rails'

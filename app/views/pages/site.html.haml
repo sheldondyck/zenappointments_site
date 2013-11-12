@@ -1,5 +1,5 @@
 =render('layouts/site_menu')
-%header
+-#%header
   .row
     %nav.top-bar
       -#.container
@@ -20,17 +20,17 @@
           %li
             =link_to 'Sign In', signin_path
 .container
-  .jumbotron
+  .row
+    .col-lg-12
+      .jumbotron.homepage
+        =image_tag 'http://placehold.it/980x500', class: 'bg'
+        .content
+          %h1 Everything you need to schedule your clients
+          =link_to 'Join now for free!', signup_path, class: 'large radius nice blue button'
+.acme-demo
+  .container
     .row
-      .large-12.columns
-        .jumbotron.homepage
-          =image_tag 'http://placehold.it/980x500', class: 'bg'
-          .content
-            %h1 Everything you need to schedule your clients
-            =link_to 'Join now for free!', signup_path, class: 'large radius nice blue button'
-  .acme-demo
-    .row
-      .large-14.columns
+      .col-lg-12
         %h2.centered elegant software to manage your office
         .acme-demo-container
           -#.explanations
@@ -39,71 +39,74 @@
               %li foo 2
               %li foo 3
               %li foo 4
-  .chessboard
+.chessboard
+  .container
     .row
       %h2.centered Everything you need to schedule your clients
-      .small-2.large-3.columns.centered
+      .col-sm-3.centered
         %i.fa.fa-calendar.icon-big
         %h3.centered
           Schedule Clients
-      .small-2.large-3.columns.centered
+      .col-sm-3.centered
         %i.fa.fa-group.icon-big
         %h3.centered
           Manage your Client List
-      .small-2.large-3.columns.centered
+      .col-sm-3.centered
         %i.fa.fa-bell.icon-big
         %h3.centered
           Send Automatic Reminders to Your Clients
-      .small-2.large-3.columns.centered
+      .col-sm-3.centered
         %i.fa.fa-money.icon-big
         %h3.centered
           Tracking Your Billing
     .row
-      .small-2.large-3.columns.centered
+      .col-sm-3.centered
         %i.fa.fa-mobile-phone.icon-big
         %h3.centered
           Check your schedule on the run
-      .small-2.large-3.columns.centered
+      .col-sm-3.centered
         %i.fa.fa-lock.icon-big
         %h3.centered
           Secure
-      .small-2.large-3.columns.centered
+      .col-sm-3.centered
         %i.fa.fa-cloud.icon-big
         %h3.centered
           Always backed up so you never lose anything
-      .small-2.large-3.columns.centered
+      .col-sm-3.centered
         %i.fa.fa-bar-chart-o.icon-big
         %h3.centered
           Measure how your business is doing
-  .features#features
+.features#features
+  .container
     .row
       %a{name: 'features'}
       %h2 Features
-      .large-6.columns
+      .col-sm-6.centered
         =image_tag 'http://placehold.it/400x300'
         %h4
           Integer diam magna, lobortis eget fermentum sit amet
-      .large-6.columns
+      .col-sm-6.centered
         =image_tag 'http://placehold.it/400x300'
         %h4
           Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
     .row
-      .large-6.columns
+      .col-sm-6.centered
         =image_tag 'http://placehold.it/400x300'
         %h4
           Integer diam magna, lobortis eget fermentum sit amet
-      .large-6.columns
+      .col-sm-6.centered
         =image_tag 'http://placehold.it/400x300'
         %h4
           Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
-  .social
+.social
+  .container
     .row
-      .large-8.columns
+      .col-sm-8
         %h2 Happy Customers
         .row
-          .large-4.columns
+          .col-sm-4
             =image_tag 'http://placehold.it/200x200'
-          .large-8.columns
+          .col-sm-8
             %p
               Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
               Integer diam magna, lobortis eget fermentum sit amet
@@ -112,48 +115,49 @@
               Lucteticus Sindimus
         %br
         .row
-          .large-4.columns
+          .col-sm-4
             =image_tag 'http://placehold.it/200x200'
-          .large-8.columns
+          .col-sm-8
             %p
               Integer diam magna, lobortis eget fermentum sit amet
               Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
             %strong
               Founder's Mom
-      .large-4.columns
+      .col-sm-4
         %h2 Twitter
         .row
-          .large-4.columns
+          .col-sm-4
             =image_tag 'http://placehold.it/75x75'
-          .large-8.columns
+          .col-sm-8
             Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
             %strong
               Founder's Mom
         %br
         .row
-          .large-4.columns
+          .col-sm-4
             =image_tag 'http://placehold.it/75x75'
-          .large-8.columns
+          .col-sm-8
             Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
             %strong
               Founder's Mom
         %br
         .row
-          .large-4.columns
+          .col-sm-4
             =image_tag 'http://placehold.it/75x75'
-          .large-8.columns
+          .col-sm-8
             Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
             %strong
               Founder's Mom
         %br
         .row
-          .large-4.columns
+          .col-sm-4
             =image_tag 'http://placehold.it/75x75'
-          .large-8.columns
+          .col-sm-8
             Iaculis eget sem. Pellentesque non lacinia est, et posuere sem
             %strong
               Founder's Mom
-  .pricing#pricing
+.pricing#pricing
+  .container
     .row
       %a{name: 'pricing'}
       %h2 Pricing
@@ -275,34 +279,34 @@
             %li.bullet-item Web/Mobile
             %li.cta-button
               =link_to 'Join Now!', signup_path, class: 'radius nice blue button'
-  .footer
-    .container
-      .row
-        .small-2.large-4.columns
-          %h5
-            =app_name
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          -# Company Press Blog
-        .small-2.large-4.columns
-          %h5 Contact Us
-          %p
-            %span.fa.fa-stack
-              %i.fa.fa-circle.fa-stack-2x
-              %i.fa.fa-twitter.fa-stack-1x.fa-inverse
-            twitter
-          %p
-            %span.fa.fa-stack
-              %i.fa.fa-circle.fa-stack-2x
-              %i.fa.fa-facebook.fa-stack-1x.fa-inverse
-            facebook
-          %p
-            %span.fa.fa-stack
-              %i.fa.fa-circle.fa-stack-2x
-              %i.fa.fa-google-plus.fa-stack-1x.fa-inverse
-            google+
-          %p
-            %span.fa.fa-stack
-              %i.fa.fa-circle.fa-stack-2x
-              %i.fa.fa-envelope-o.fa-stack-1x.fa-inverse
-            email
+.footer
+  .container
+    .row
+      .col-sm-6
+        %h5
+          =app_name
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        -# Company Press Blog
+      .col-sm-6
+        %h5 Contact Us
+        %p
+          %span.fa.fa-stack
+            %i.fa.fa-circle.fa-stack-2x
+            %i.fa.fa-twitter.fa-stack-1x.fa-inverse
+          twitter
+        %p
+          %span.fa.fa-stack
+            %i.fa.fa-circle.fa-stack-2x
+            %i.fa.fa-facebook.fa-stack-1x.fa-inverse
+          facebook
+        %p
+          %span.fa.fa-stack
+            %i.fa.fa-circle.fa-stack-2x
+            %i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+          google+
+        %p
+          %span.fa.fa-stack
+            %i.fa.fa-circle.fa-stack-2x
+            %i.fa.fa-envelope-o.fa-stack-1x.fa-inverse
+          email
 

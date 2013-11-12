@@ -1,6 +1,6 @@
 .navbar.navbar-default.zen-navbar(role='navigation')
-  .navbar-inner
-    .container
+  .container
+    .navbar-inner
       -# TODO need to define app_name url
       =link_to image_tag('zen-logo.png', id:'zen-logo') + ' ' + app_name, www_url, {class:'navbar-brand'}
       %ul.nav.navbar-nav
@@ -10,8 +10,20 @@
           =link_to 'Pricing', '#pricing', class: 'scroll'
         %li{:class => active('site#blog'), id: 'blog'}
           =link_to 'Blog', '#'
-      %ul.nav.navbar-nav.navbar-right
-        %li{:class => active('site#signup'), id: 'signup'}
-          =link_to 'Join Now!', signup_path, class: 'btn'
-        %li{:class => active('site#signin'), id: 'signin'}
-          =link_to 'Sign In', signin_path, class: 'btn'
+      .nav.navbar-nav.navbar-right
+        %a{href: signup_path}
+          %button.btn.btn-default.navbar-btn Join Now for Free!
+        %a{href: signin_path}
+          %button.btn.btn-default.navbar-btn Sign In
+        -#%li
+          -#%button.btn.btn-default.navbar-btn
+            =link_to 'Join Now!', signup_path
+            -#Join Now!
+          -#, signup_path, class: 'btn btn-default navbar-btn'
+          -#=link_to 'Join Now!', signup_path, class: 'btn btn-default navbar-btn'
+          %a{href: signup_path}
+            %button.btn.btn-default.navbar-btn Join Now!
+          -#=link_to 'Join Now!', signup_path, class: 'btn btn-default navbar-btn'
+        -#%li
+          %button.btn.btn-default.navbar-btn Sign In
+          -#=link_to 'Sign In', signin_path, class: 'btn btn-default navbar-btn'
