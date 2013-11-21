@@ -1,3 +1,4 @@
+-# TODO does not align with signinup_menu
 .navbar.navbar-default.zen-navbar(role='navigation')
   .container
     .navbar-inner
@@ -10,11 +11,13 @@
           =link_to 'Pricing', '#pricing', class: 'scroll'
         %li{:class => active('site#blog'), id: 'blog'}
           =link_to 'Blog', '#'
-      .nav.navbar-nav.navbar-right
-        %a{href: signup_path}
-          %button.btn.btn-default.navbar-btn Join Now for Free!
-        %a{href: signin_path}
-          %button.btn.btn-default.navbar-btn Sign In
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{href: signup_path, id: 'navbar-signup'}
+            %button.btn.btn-default.navbar-btn Join Now for Free!
+        %li
+          %a{href: signin_path, id: 'navbar-signin'}
+            %button.btn.btn-default.navbar-btn Sign In
         -#%li
           -#%button.btn.btn-default.navbar-btn
             =link_to 'Join Now!', signup_path
