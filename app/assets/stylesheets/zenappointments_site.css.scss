@@ -62,15 +62,71 @@ $section_padding:25px;
 }
 
 .pricing {
-  position:relative;
-  padding:$section_padding;
-  background:rgba(255,255,255,0.85);
+  position: relative;
+  padding: $section_padding;
+}
+
+ul.pricing-table {
+  float: left;
+  display: block;
+  width: 18%;
+  border: 1px solid rgb(221, 221, 221);
+  margin: 10px;
+  padding: 0px;
+  list-style: none;
+  list-style-position: outside;
+
+  li.title {
+    padding: 5px 10px;
+    background-color: #444;
+    color: rgb(238, 238, 238);
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  li.price {
+    padding: 5px 10px;
+    background-color: #aaa;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  li.description {
+    padding: 5px 10px;
+    background-color: #eee;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  li.bullet-item {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  li.button {
+    padding: 10px 10px;
+    background-color: #bbb;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+  }
 }
 
 .footer {
-  position:relative;
-  padding:$section_padding;
-  background:rgba(0,100,150,0.85);
+  position: relative;
+  padding: $section_padding;
+  background: rgba(0,100,150,0.85);
 }
 
 .homepage {

@@ -9,11 +9,13 @@ jQuery ->
     $("html,body").animate scrollTop: dest , 1000, "swing"
 
 jQuery ->
-  $('a.btn-price-monthly').click ->
+  $('button.btn-price-monthly').click ->
     $('li.price.monthly').css('display', 'block')
     $('li.price.yearly').css('display', 'none')
 
 jQuery ->
-  $('.btn-price-yearly').click ->
+  $('button.btn-price-yearly').click ->
     $('li.price.monthly').css('display', 'none')
     $('li.price.yearly').css('display', 'block')
+
+

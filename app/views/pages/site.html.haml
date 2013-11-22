@@ -80,7 +80,7 @@
   .container
     .row
       %a{name: 'features'}
-      %h2 Features
+      %h2.centered Features
       .col-sm-6.centered
         =image_tag 'http://placehold.it/400x300'
         %h4
@@ -157,128 +157,120 @@
             %strong
               Founder's Mom
 .pricing#pricing
+  %a{name: 'pricing'}
   .container
     .row
       %a{name: 'pricing'}
-      %h2 Pricing
+      %h2.centered
+        Pricing
+      .centered
+        .btn-group
+          %button.btn.btn-default.btn-price-monthly
+            Monthly
+          %button.btn.btn-default.btn-price-yearly
+            Yearly
     .row
-      -# TODO: add anual price (per month) as well. look at close.io has a good example how
-      -# TODO: show as matrix
-      .button-bar
-        %ul.button-group.round
-          %li
-            %a.button.btn-price-monthly
-              Monthly
-          %li
-            %a.button.btn-price-yearly
-              Yearly
-    .row
-      %ul.large-block-grid-5
-        %li
-          %ul.pricing-table
-            %li.title Basic
-            %li.price.monthly
-              $&nbsp;12.95/month
-            %li.price.yearly
-              $&nbsp;9.95/month
-              .yearly-details
-                One payment of $&nbsp;119,40
-            %li.description Single User
-            %li.bullet-item Unlimited Clients
-            %li.bullet-item Unlimited Appointments
-            %li.bullet-item Single Employee
-            %li.bullet-item Simple Reports
-            %li.bullet-item No Detailed Reports
-            %li.bullet-item No Billing
-            %li.bullet-item No Auto Reminders by Email
-            %li.bullet-item No Auto Reminders by SMS
-            %li.bullet-item Web Only
-            %li.cta-button
-              =link_to 'Join Now!', signup_path, class: 'radius nice blue button'
-        %li
-          %ul.pricing-table
-            %li.title Solo
-            %li.price.monthly
-              $&nbsp;33.95/month
-            %li.price.yearly
-              $&nbsp;29.95/month
-              .yearly-details
-                One payment of $&nbsp;359,40
-            %li.description Single User
-            %li.bullet-item Unlimited Clients
-            %li.bullet-item Unlimited Appointments
-            %li.bullet-item Single Employee
-            %li.bullet-item Simple Reports
-            %li.bullet-item Detailed Reports
-            %li.bullet-item Billing
-            %li.bullet-item Auto Reminders by Email
-            %li.bullet-item No Auto Reminders by SMS
-            %li.bullet-item Web/Mobile
-            %li.cta-button
-              =link_to 'Join Now!', signup_path, class: 'radius nice blue button'
-        %li
-          %ul.pricing-table
-            %li.title Small Office
-            %li.price.monthly
-              $&nbsp;85.95/month
-            %li.price.yearly
-              $&nbsp;79.95/month
-              .yearly-details
-                One payment of $&nbsp;959,40
-            %li.description Multi User
-            %li.bullet-item Unlimited Clients
-            %li.bullet-item Unlimited Appointments
-            %li.bullet-item 10 Employees
-            %li.bullet-item Simple Reports
-            %li.bullet-item Detailed Reports
-            %li.bullet-item Billing
-            %li.bullet-item Auto Reminders by Email
-            %li.bullet-item Auto Reminders by SMS
-            %li.bullet-item Web/Mobile
-            %li.cta-button
-              =link_to 'Join Now!', signup_path, class: 'radius nice blue button'
-        %li
-          %ul.pricing-table
-            %li.title Big Office
-            %li.price.monthly
-              $&nbsp;289.95/month
-            %li.price.yearly
-              $&nbsp;249.95/month
-              .yearly-details
-                One payment of $&nbsp;2.999,40
-            %li.description Multi User
-            %li.bullet-item Unlimited Clients
-            %li.bullet-item Unlimited Appointments
-            %li.bullet-item Unlimited Employee
-            %li.bullet-item Simple Reports
-            %li.bullet-item Detailed Reports
-            %li.bullet-item Billing
-            %li.bullet-item Auto Reminders by Email
-            %li.bullet-item Auto Reminders by SMS
-            %li.bullet-item Web/Mobile
-            %li.cta-button
-              =link_to 'Join Now!', signup_path, class: 'radius nice blue button'
-        %li
-          %ul.pricing-table
-            %li.title Multi Office
-            %li.price.monthly
-              $&nbsp;105.95/month*
-            %li.price.yearly
-              $&nbsp;89.95/month*
-              .yearly-details
-                One payment of $&nbsp;1.079,40
-            %li.description Multi User
-            %li.bullet-item Unlimited Clients
-            %li.bullet-item Unlimited Appointments
-            %li.bullet-item Unlimited Employee
-            %li.bullet-item Simple Reports
-            %li.bullet-item Detailed Reports
-            %li.bullet-item Billing
-            %li.bullet-item Auto Reminders by Email
-            %li.bullet-item Auto Reminders by SMS
-            %li.bullet-item Web/Mobile
-            %li.cta-button
-              =link_to 'Join Now!', signup_path, class: 'radius nice blue button'
+      .col-sm-12
+        %ul.pricing-table
+          %li.title Basic
+          %li.price.monthly
+            $&nbsp;12.95/month
+          %li.price.yearly
+            $&nbsp;9.95/month
+            .yearly-details
+              One payment of $&nbsp;119,40
+          %li.description Single User
+          %li.bullet-item Unlimited Clients
+          %li.bullet-item Unlimited Appointments
+          %li.bullet-item Single Employee
+          %li.bullet-item Simple Reports
+          %li.bullet-item No Detailed Reports
+          %li.bullet-item No Billing
+          %li.bullet-item No Auto Reminders by Email
+          %li.bullet-item No Auto Reminders by SMS
+          %li.bullet-item Web Only
+          %li.button
+            =link_to 'Join Now!', signup_path, class: 'btn btn-primary'
+        %ul.pricing-table
+          %li.title Solo
+          %li.price.monthly
+            $&nbsp;33.95/month
+          %li.price.yearly
+            $&nbsp;29.95/month
+            .yearly-details
+              One payment of $&nbsp;359,40
+          %li.description Single User
+          %li.bullet-item Unlimited Clients
+          %li.bullet-item Unlimited Appointments
+          %li.bullet-item Single Employee
+          %li.bullet-item Simple Reports
+          %li.bullet-item Detailed Reports
+          %li.bullet-item Billing
+          %li.bullet-item Auto Reminders by Email
+          %li.bullet-item No Auto Reminders by SMS
+          %li.bullet-item Web/Mobile
+          %li.button
+            =link_to 'Join Now!', signup_path, class: 'btn btn-primary'
+        %ul.pricing-table
+          %li.title Small Office
+          %li.price.monthly
+            $&nbsp;85.95/month
+          %li.price.yearly
+            $&nbsp;79.95/month
+            .yearly-details
+              One payment of $&nbsp;959,40
+          %li.description Multi User
+          %li.bullet-item Unlimited Clients
+          %li.bullet-item Unlimited Appointments
+          %li.bullet-item 10 Employees
+          %li.bullet-item Simple Reports
+          %li.bullet-item Detailed Reports
+          %li.bullet-item Billing
+          %li.bullet-item Auto Reminders by Email
+          %li.bullet-item Auto Reminders by SMS
+          %li.bullet-item Web/Mobile
+          %li.button
+            =link_to 'Join Now!', signup_path, class: 'btn btn-primary'
+        %ul.pricing-table
+          %li.title Big Office
+          %li.price.monthly
+            $&nbsp;289.95/month
+          %li.price.yearly
+            $&nbsp;249.95/month
+            .yearly-details
+              One payment of $&nbsp;2.999,40
+          %li.description Multi User
+          %li.bullet-item Unlimited Clients
+          %li.bullet-item Unlimited Appointments
+          %li.bullet-item Unlimited Employee
+          %li.bullet-item Simple Reports
+          %li.bullet-item Detailed Reports
+          %li.bullet-item Billing
+          %li.bullet-item Auto Reminders by Email
+          %li.bullet-item Auto Reminders by SMS
+          %li.bullet-item Web/Mobile
+          %li.button
+            =link_to 'Join Now!', signup_path, class: 'btn btn-primary'
+        %ul.pricing-table
+          %li.title Multi Office
+          %li.price.monthly
+            $&nbsp;105.95/month*
+          %li.price.yearly
+            $&nbsp;89.95/month*
+            .yearly-details
+              One payment of $&nbsp;1.079,40
+          %li.description Multi User
+          %li.bullet-item Unlimited Clients
+          %li.bullet-item Unlimited Appointments
+          %li.bullet-item Unlimited Employee
+          %li.bullet-item Simple Reports
+          %li.bullet-item Detailed Reports
+          %li.bullet-item Billing
+          %li.bullet-item Auto Reminders by Email
+          %li.bullet-item Auto Reminders by SMS
+          %li.bullet-item Web/Mobile
+          %li.button
+            =link_to 'Join Now!', signup_path, class: 'btn btn-primary'
 .footer
   .container
     .row
