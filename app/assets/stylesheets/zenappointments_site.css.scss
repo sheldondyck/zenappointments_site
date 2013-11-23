@@ -46,22 +46,23 @@ $section_padding:25px;
 .chessboard {
   position:relative;
   padding:$section_padding;
-  background:rgba(200,200,200,0.85);
+  background:rgba(200,200,200,1.0);
 }
 
 .social {
   position:relative;
   padding:$section_padding;
-  background:rgba(100,150,100,0.85);
+  background:rgba(100,150,100,1.0);
 }
 
 .features {
   position:relative;
   padding:$section_padding;
-  background:rgba(100,100,150,0.85);
+  background:rgba(100,100,150,1.0);
 }
 
 .pricing {
+  background: opaque;
   position: relative;
   padding: $section_padding;
 }
