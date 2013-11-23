@@ -1,10 +1,6 @@
 =render('layouts/signinup_menu')
 .container
   .zen-hero-section
-    -#%h1.centered
-      =image_tag 'logo.png', alt: app_name
-      %br
-      is lauching soon!
     %h1.centered
       =app_name
       =t'.main_title'
@@ -14,6 +10,76 @@
 
   .well
     =render('subscribe_to_beta_list_form')
+
+.chessboard
+  .container
+    .row
+      %h2.centered
+        =t'.everything_you_need'
+      .col-sm-3.centered
+        %i.fa.fa-calendar.icon-big
+        %h3.centered
+          =t'.schedule_clients'
+      .col-sm-3.centered
+        %i.fa.fa-group.icon-big
+        %h3.centered
+          =t'.manage_client_list'
+      .col-sm-3.centered
+        %i.fa.fa-bell.icon-big
+        %h3.centered
+          =t'.send_auto_reminders'
+      .col-sm-3.centered
+        %i.fa.fa-money.icon-big
+        %h3.centered
+          =t'.track_your_billing'
+    .row
+      .col-sm-3.centered
+        %i.fa.fa-mobile-phone.icon-big
+        %h3.centered
+          =t'.check_schedule'
+      .col-sm-3.centered
+        %i.fa.fa-lock.icon-big
+        %h3.centered
+          =t'.secure'
+      .col-sm-3.centered
+        %i.fa.fa-cloud.icon-big
+        %h3.centered
+          =t'.always_backed_up'
+      .col-sm-3.centered
+        %i.fa.fa-bar-chart-o.icon-big
+        %h3.centered
+          =t'.measure_your_business'
+.footer
+  .container
+    .row
+      .col-sm-6
+        %h5
+          =app_name
+        %p
+          =t'.main_subtitle'
+      .col-sm-6
+        %h5
+          =t'.contact_us'
+        %p
+          %span.fa.fa-stack
+            %i.fa.fa-circle.fa-stack-2x
+            %i.fa.fa-twitter.fa-stack-1x.fa-inverse
+          twitter
+        %p
+          %span.fa.fa-stack
+            %i.fa.fa-circle.fa-stack-2x
+            %i.fa.fa-facebook.fa-stack-1x.fa-inverse
+          facebook
+        %p
+          %span.fa.fa-stack
+            %i.fa.fa-circle.fa-stack-2x
+            %i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+          google+
+        %p
+          %span.fa.fa-stack
+            %i.fa.fa-circle.fa-stack-2x
+            %i.fa.fa-envelope-o.fa-stack-1x.fa-inverse
+          email
 
   %p
     #lang-links

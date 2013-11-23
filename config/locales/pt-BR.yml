@@ -3,6 +3,16 @@ pt-BR:
     index:
       main_title: 'está lançando em breve!'
       main_subtitle: 'Software de consulta para o seu escritório'
+      everything_you_need: 'Tudo o que voce precisa para programar seus clientes'
+      schedule_clients: 'Clientes Agenda'
+      manage_client_list: 'Gerenciar sua lista de clientes'
+      send_auto_reminders: 'Enviar lembretes automáticos para os seus clientes'
+      track_your_billing: 'Como acompanhar o seu faturamento'
+      check_schedule: 'Verifique se o seu cronograma em fuga'
+      seguro: 'Segura'
+      always_backed_up: 'Sempre backup para que você nunca perde nada'
+      measure_your_business: 'Meça como sua empresa está fazendo'
+      contact_us: 'Fale Conosco'
     subscribe_to_beta_list_form:
       your_email: 'Seu e-mail'
       subscribe_msg: 'Se inscrever para receber atualizações'

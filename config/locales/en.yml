@@ -24,6 +24,16 @@ en:
     index:
       main_title: 'is launching soon!'
       main_subtitle: 'Elegante appointment software for your office'
+      everything_you_need: 'Everything you need to schedule your clients'
+      schedule_clients: 'Schedule Clients'
+      manage_client_list: 'Manage your Client List'
+      send_auto_reminders: 'Send Automatic Reminders to Your Clients'
+      track_your_billing: 'Tracking Your Billing'
+      check_schedule: 'Check your schedule on the run'
+      secure: 'Secure'
+      always_backed_up: 'Always backed up so you never lose anything'
+      measure_your_business: 'Measure how your business is doing'
+      contact_us: 'Contact Us'
     subscribe_to_beta_list_form:
       your_email: 'Your Email Address'
       subscribe_msg: 'Subscribe to receive updates'
