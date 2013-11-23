@@ -1,24 +1,4 @@
 =render('layouts/site_menu')
--#%header
-  .row
-    %nav.top-bar
-      -#.container
-      %ul.title-area
-        %li.name
-          %h1
-            =link_to app_name, '#'
-      %section.top-bar-section
-        %ul.right
-          %li.active
-            %a.scroll{href: '#features'} Features
-          %li
-            %a.scroll{href: '#pricing'} Pricing
-          %li
-            =link_to 'Blog', '#'
-          %li
-            =link_to 'Join Now!', signup_path, class: 'button'
-          %li
-            =link_to 'Sign In', signin_path
 .container
   .row
     .col-lg-12
@@ -77,6 +57,7 @@
         %h3.centered
           Measure how your business is doing
 .features#features
+  %a{name: 'features'}
   .container
     .row
       %a{name: 'features'}

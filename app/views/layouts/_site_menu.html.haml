@@ -5,11 +5,11 @@
       -# TODO need to define app_name url
       =link_to image_tag('zen-logo.png', id:'zen-logo') + ' ' + app_name, www_url, {class:'navbar-brand'}
       %ul.nav.navbar-nav
-        %li{:class => active('site#features'), id: 'features'}
+        %li{:class => active('site#features'), id: 'features_link'}
           =link_to 'Features', '#features', class: 'scroll'
-        %li{:class => active('site#pricing'), id: 'pricing'}
-          =link_to 'Pricing', '#pricing', class: 'scroll2'
-        %li{:class => active('site#blog'), id: 'blog'}
+        %li{:class => active('site#pricing'), id: 'pricing_link'}
+          =link_to 'Pricing', '#pricing', class: 'scroll'
+        %li{:class => active('site#blog'), id: 'blog_link'}
           =link_to 'Blog', '#'
       %ul.nav.navbar-nav.navbar-right
         %li
