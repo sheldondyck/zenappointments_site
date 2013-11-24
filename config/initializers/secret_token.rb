@@ -9,4 +9,5 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-ZenAppointmentsSite::Application.config.secret_key_base = ENV['SECRET_KEY_BASE']
+#ZenAppointmentsSite::Application.config.secret_key_base = ENV['SECRET_KEY_BASE']
+ZenAppointmentsSite::Application.config.secret_key_base = '6714906504f0e1747a16511672949104fc7228f5e8312a3b1d80b2b3c1cd63600abb15cc9b16bd8bc17d88ff0677f03c9e4a9866c68b6a6ac77df6957b70fe54'
